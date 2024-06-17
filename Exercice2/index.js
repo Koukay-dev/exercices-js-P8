@@ -1,4 +1,21 @@
 // Créez votre fonction ici
+function calculate(nb1, nb2, operateur){
+    switch(operateur){
+        case ('+'):
+            return nb1 + nb2
+        case ('-'):
+            return nb1 - nb2
+        case ('*'):
+            return nb1 * nb2
+        case ('/'):
+            if(nb2 === 0){
+                return 'Division by zero is not allowed'
+            }
+            return nb1 / nb2
+        case ('%'):
+            return 'Invalid operator'
+    }
+}
 
 // Exemples d'utilisation de la fonction
 console.log(calculate(5, 3, '+'));   // Affiche 8
