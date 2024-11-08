@@ -1,5 +1,7 @@
 // Créez votre fonction ici
 function calculate(nb1, nb2, operateur){
+    nb1 = parseInt(nb1)
+    nb2 = parseInt(nb2)
     switch(operateur){
         case ('+'):
             return nb1 + nb2
@@ -12,7 +14,7 @@ function calculate(nb1, nb2, operateur){
                 return 'Division by zero is not allowed'
             }
             return nb1 / nb2
-        case ('%'):
+        default:
             return 'Invalid operator'
     }
 }

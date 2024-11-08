@@ -1,6 +1,5 @@
 
 const display = document.getElementById('display')
-display.value = '10 + 5 - 3'
 
 function appendToDisplay(string){
     const currentDisplay = display.value

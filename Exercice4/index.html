@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <title>Gestion d'événements en JavaScript</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <button id="myButton">Cliquez ici</button>
+    <p id="paragraphe"></p>
 
-<button id="myButton">Cliquez ici</button>
-
-<script src="./index.js"></script>
-</body>
-
+    <script type="text/JavaScript">
+        const button = document.getElementById('myButton')
+        button.addEventListener('click', () => document.getElementById('paragraphe').innerText ='Bonjour, vous avez cliqué sur le bouton !')
+    </script>
+  </body>
 </html>

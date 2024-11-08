@@ -1,3 +1,9 @@
-const button = document.getElementById('myButton')
-
-button.addEventListener('click', () => console.log('Bonjour, vous avez cliqué sur le bouton !'))
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("myButton");
+  button.addEventListener(
+    "click",
+    () =>
+      (document.getElementById("paragraphe").innerText =
+        "Bonjour, vous avez cliqué sur le bouton !")
+  );
+});
